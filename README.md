@@ -46,7 +46,7 @@ Then open http://localhost:8000.
   `.skill-button` tiles.
 - `.skill-card-auto` and `.experience-auto` override the fixed heights of the original cards so
   content is never clipped as it grows.
-- Replace `images/AsgarAliSha-CV.pdf` whenever the CV changes; both download buttons point at it.
+- Replace `images/Asgar_AI.pdf` whenever the CV changes; both download buttons point at it.
 
 ## Contact
 
