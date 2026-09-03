@@ -4,7 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asgar Ali Sha</title>
+    <title>Asgar Ali Sha D | GenAI Engineer &amp; Full Stack Developer</title>
+    <meta name="description"
+        content="GenAI Engineer and Full Stack Developer with 5+ years building production LLM systems: RAG pipelines, MCP servers, and document-extraction engines in Python, FastAPI, Django, and LangChain.">
+    <meta name="author" content="Asgar Ali Sha D">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23051B1C'/%3E%3Ctext x='32' y='45' font-family='Arial,Helvetica,sans-serif' font-size='38' font-weight='bold' fill='%239CF7A5' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+    <meta property="og:title" content="Asgar Ali Sha D | GenAI Engineer &amp; Full Stack Developer">
+    <meta property="og:description"
+        content="Production LLM systems, RAG pipelines, and MCP servers. Python, FastAPI, Django, LangChain.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://asgard-15.github.io/asgaralisha.github.io/">
     <!-- fonts -->
     <link href="https://db.onlinewebfonts.com/c/2539cd9ccc30256a3a42980eaeccd934?family=Handi" rel="stylesheet">
     <!-- <link href="https://db.onlinewebfonts.com/c/b8a1a8c99f8a6d06ccd14edf1735e1b8?family=Hand" rel="stylesheet"> -->
@@ -508,6 +518,128 @@
             transform-origin: 70% 70%;
             animation: wave 2s infinite;
         }
+        /* ---- Additions: AI-focused skill chips, icon project headers, tech tags ---- */
+
+        /* Let the skill cards grow with their content instead of clipping at 279px */
+        .skill-card-auto {
+            height: auto !important;
+            min-height: 279px;
+            padding-bottom: 22px;
+            margin: 0 auto 24px;
+        }
+
+        /* Text pill for technologies that have no logo asset in images/ */
+        .skill-chip {
+            display: inline-block;
+            margin: 4px 3px;
+            padding: 6px 12px;
+            font-size: 12px;
+            line-height: 16px;
+            color: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(48, 139, 148, 1);
+            border-radius: 20px;
+            background: rgba(5, 27, 28, 0.9);
+            white-space: nowrap;
+        }
+
+        .skill-chip.accent {
+            color: rgba(156, 247, 165, 1);
+            border-color: rgba(122, 243, 134, 0.9);
+            background: linear-gradient(0deg, rgba(19, 54, 41, 0.4), rgba(19, 54, 41, 0.4));
+        }
+
+        /* Stand-in for .project-image on projects with no screenshot */
+        .project-icon {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            background: linear-gradient(135deg, #05282b 0%, #021011 60%, #0a3b33 100%);
+            border-bottom: 1px solid rgba(48, 139, 148, 0.6);
+        }
+
+        .project-icon > i {
+            font-size: 58px;
+            color: rgba(156, 247, 165, 0.85);
+        }
+
+        /* Technology row beneath each project description */
+        .tech-tags {
+            padding: 0 4px 6px;
+        }
+
+        .tech-tags > span {
+            display: inline-block;
+            margin: 3px 3px 0 0;
+            padding: 3px 9px;
+            font-size: 11px;
+            line-height: 15px;
+            color: rgba(255, 255, 255, 0.75);
+            border: 1px solid rgba(52, 74, 76, 1);
+            border-radius: 4px;
+        }
+
+        /* Monogram used where a company has no logo asset */
+        .company_mono {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            margin: 0 auto;
+            font-family: 'Handi', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: rgba(156, 247, 165, 1);
+            border: 1px solid rgba(48, 139, 148, 1);
+            border-radius: 12px;
+            background: linear-gradient(0deg, rgba(19, 54, 41, 0.45), rgba(19, 54, 41, 0.45));
+        }
+
+        /* The experience card is fixed at 161px; the current role needs more room */
+        .experience-auto {
+            height: auto !important;
+            min-height: 161px;
+            padding: 18px 10px;
+            margin-bottom: 22px;
+        }
+
+        .experience-auto .company-work > ul {
+            margin: 6px 0 0;
+            padding-left: 18px;
+        }
+
+        .experience-auto .company-work li {
+            margin-bottom: 4px;
+        }
+
+        .role-badge {
+            display: inline-block;
+            margin-left: 8px;
+            padding: 2px 10px;
+            font-size: 11px;
+            line-height: 15px;
+            color: rgba(156, 247, 165, 1);
+            border: 1px solid rgba(122, 243, 134, 0.7);
+            border-radius: 20px;
+            vertical-align: middle;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .skill-card-auto {
+                margin: 0 auto 24px !important;
+            }
+            .experience-auto {
+                width: 335px !important;
+                height: auto !important;
+            }
+            .experience-auto .company_name > h5 {
+                margin: -70px 0px 15px 70px !important;
+            }
+        }
     </style>
 </head>
 
@@ -552,11 +684,13 @@
                 </div>
                 <div class="col-md-8 home-content">
                     <h4>HEY <span>👋 </span>, I'M</h4>
-                    <h2>Asgar Ali sha</h2>
-                    <h6 style="font-size: large;margin-top: 20px;">Software Engineer | Full-Stack Developer</h6>
-                    <p>Experienced Full-Stack Developer with a demonstrated history of working in the Information technology and
-                        services Industry. Scaling new heights of success with hard work and dedication and leaving a mark of
-                        excellence on every step, targeting given assignments with an organization of high repute. </p>
+                    <h2>Asgar Ali Sha D</h2>
+                    <h6 style="font-size: large;margin-top: 20px;">GenAI Engineer | Full Stack Developer</h6>
+                    <p>I build production AI systems and the full-stack applications around them. Over 5+ years I have
+                        delivered LLM-powered automation pipelines handling 100+ document formats, RAG-based chatbots
+                        serving multi-channel customer support, and MCP server suites that let non-technical users query
+                        data in plain language &mdash; cutting manual workflows by 80%. Working day to day in Python,
+                        FastAPI, Django, LangChain, React, and SQL Server across Azure and GCP.</p>
                         <a target="_blank" rel="noreferrer" href="images\AsgarAliSha-CV.pdf"><button class="btn btn-class">Download My CV <i class="fa-solid fa-download"></i></button></a>
                 </div>
             </div>
@@ -565,45 +699,127 @@
         <div id="about" class="section" style="flex-direction: column;text-align: center;">
             <h2>About Me</h2><br>
             <div class="container">
-               <p>I'm a Fullstack Developer building the Front-end and Back-end of Web Applications that leads to the success of the overall product.</p> 
+               <p>I design and ship AI systems that reach real users: retrieval pipelines, LLM extraction services,
+                  Model Context Protocol servers, and the FastAPI, Django, and React applications that surround them.
+                  Five years of full-stack and enterprise integration work sit underneath the AI &mdash; so the models
+                  land in software that holds up in production.</p>
             </div>
-            <p>Currently Working as <span style="color:rgba(255, 255, 255, 1);">Software Developer</span> at</p>
-            <div class="row experience">
+            <p>Currently working as <span style="color:rgba(255, 255, 255, 1);">Specialist &ndash; Software Engineering</span> at</p>
+            <div class="row experience experience-auto">
                 <div class="col-md-2 company_logo">
-                    <img src="images\codentrix_logo.jpg" alt="Company Logo" class="img-fluid rounded">
+                    <div class="company_mono">IA</div>
                 </div>
                 <div class="col-md-10" style="text-align: left;">
-                    <!-- <div class="row">
-                        <div class="col-md-8 mt-2"><h5>Codentrix Technologies Pvt Ltd</h5></div>
-                        <div class="col-md-4 mt-1"><p>2021 - Present</p></div>                        
-                    </div> -->
-                    <div class="company_name"><h5 class="mt-1" style="flex: 1;">Codentrix Technologies Pvt Ltd</h5><p class="mt-3">2021 - Present</p></div>
+                    <div class="company_name"><h5 class="mt-1" style="flex: 1;">InteleANTS Virtual Workforce Pvt Ltd</h5><p class="mt-3" style="white-space: nowrap;">Aug 2024 - Present<span class="role-badge">Current</span></p></div>
+                    <p class="company-location">
+                        <i class="fa-solid fa-location-dot fa-beat-fade"></i> &nbsp;Chennai, Tamil Nadu &nbsp;&nbsp;
+                        <i class="fa-solid fa-microchip fa-beat"></i> &nbsp;GenAI &amp; Full Stack Engineering
+                    </p>
+                    <div class="company-work">
+                        <ul>
+                            <li>Architected a full-stack Call Audit QA application (Python, FastAPI, SQL Server, React) with 25+ features including SSO/JWT authentication, dynamic scoring templates, and real-time analytics, adopted by 30+ QA auditors.</li>
+                            <li>Built an AI customer support chatbot with RAG-based knowledge retrieval and automated human handoff, serving multi-channel support through Chatwoot webhook integration.</li>
+                            <li>Built 3 MCP servers with FastMCP for SQL querying, document analysis, and Azure Git exploration, enabling non-technical users to reach data through natural language.</li>
+                            <li>Designed prompt chains for structured extraction reaching 95%+ accuracy using few-shot prompting, chain-of-thought reasoning, and Pydantic validation; automated 80% of manual data entry across 100+ vendor formats.</li>
+                            <li>Developed TensorFlow models for call sentiment classification and agent performance prediction, and PySpark workflows transforming millions of CDR and catalog records into training features.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row experience experience-auto">
+                <div class="col-md-2 company_logo">
+                    <img src="images\codentrix_logo.jpg" alt="Codentrix Technologies logo" class="img-fluid rounded">
+                </div>
+                <div class="col-md-10" style="text-align: left;">
+                    <div class="company_name"><h5 class="mt-1" style="flex: 1;">Codentrix Technologies Pvt Ltd</h5><p class="mt-3">Sep 2021 - Jul 2024</p></div>
                     <p class="company-location">
                         <i class="fa-solid fa-location-dot fa-beat-fade"></i> &nbsp;Chennai, Tamil Nadu &nbsp;&nbsp;
                         <a target="_blank" rel="noreferrer" class="url-rem" href="https://www.codentrixtechnologies.com/">
                             <i class="fa-solid fa-globe fa-beat"></i> &nbsp;codentrixtechnologies.com
-                        </a> 
+                        </a>
                     </p>
                     <div class="company-work">
-                        Designing, implementing, and Developing software solutions using the latest Python technologies such as Django, REST framework, and React.js.
+                        <ul>
+                            <li>Engineered an Inventory Management System (Django, React, MySQL) valuing stock across Raw Materials, WIP, and Finished Goods for multi-country operations.</li>
+                            <li>Delivered an Oracle ERP-integrated Item Generation App deployed across China, Thailand, Singapore, and Japan.</li>
+                            <li>Created a BOM calculation algorithm over 2M+ records, cutting manual effort by 70%.</li>
+                            <li>Built TracerBee, a part-traceability platform tracking items from raw material to finished goods.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <br><br><br>
+            <br><br>
             <h2>My Skills</h2><br><br>
             <div class="row skill-container">
-                <div class="col-md-4">
-                    <div class="skill-card-one">
-                        <h6 style="color: rgba(255, 255, 255, 1); margin-top: 20px;">Front-end Technologies</h6><br><br>
+                <div class="col-md-6">
+                    <div class="skill-card-one skill-card-auto">
+                        <h6 style="color: rgba(255, 255, 255, 1); margin-top: 20px;">AI &amp; LLM Engineering</h6><br>
+                        <div class="container" style="text-align: center;">
+                            <span class="skill-chip accent">OpenAI API</span>
+                            <span class="skill-chip accent">Claude API</span>
+                            <span class="skill-chip accent">LangChain</span>
+                            <span class="skill-chip accent">MCP / FastMCP</span>
+                            <span class="skill-chip">Ollama</span>
+                            <span class="skill-chip">Hugging Face</span>
+                            <span class="skill-chip">RAG Pipelines</span>
+                            <span class="skill-chip">Embeddings</span>
+                            <span class="skill-chip">Function Calling</span>
+                            <span class="skill-chip">Prompt Engineering</span>
+                            <span class="skill-chip">Agentic AI</span>
+                            <span class="skill-chip">Qdrant</span>
+                            <span class="skill-chip">Chroma</span>
+                            <span class="skill-chip">Pinecone</span>
+                            <span class="skill-chip">Hybrid Search</span>
+                            <span class="skill-chip">Re-ranking</span>
+                            <span class="skill-chip">TensorFlow</span>
+                            <span class="skill-chip">NLP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill-card-two skill-card-auto">
+                        <h6 style="color: rgba(255, 255, 255, 1); margin-top: 20px;">Back-end &amp; Databases</h6><br>
                         <div class="container">
-                            <div class="container row">
+                            <div class="container row" style="justify-content: center;">
                                 <div class="skill-button"><img class="skill_icon"
-                                    src="images\js.jpg"
-                                    alt="JavaScript"  title="JavaScript">
-                                </div>
+                                    src="images\python.jpg"
+                                    alt="Python"  title="Python"></div>
+                                <div class="skill-button"><img class="skill_icon"
+                                    src="images\django.png"
+                                    alt="Django"  title="Django"></div>
+                                <div class="skill-button"><img class="skill_icon"
+                                    src="images\sql.png"
+                                    alt="SQL Server"  title="SQL Server"></div>
+                                <div class="skill-button"><img class="skill_icon"
+                                    src="images\mysql.jpg"
+                                    alt="MySQL"  title="MySQL"></div>
+                            </div>
+                        </div>
+                        <div class="container" style="text-align: center;">
+                            <span class="skill-chip accent">FastAPI</span>
+                            <span class="skill-chip">Django REST Framework</span>
+                            <span class="skill-chip">Flask</span>
+                            <span class="skill-chip">Pydantic</span>
+                            <span class="skill-chip">REST APIs</span>
+                            <span class="skill-chip">GraphQL</span>
+                            <span class="skill-chip">OAuth / JWT</span>
+                            <span class="skill-chip">PostgreSQL</span>
+                            <span class="skill-chip">PySpark</span>
+                            <span class="skill-chip">ETL Pipelines</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill-card-two skill-card-auto">
+                        <h6 style="color: rgba(255, 255, 255, 1); margin-top: 20px;">Front-end</h6><br>
+                        <div class="container">
+                            <div class="container row" style="justify-content: center;">
                                 <div class="skill-button"><img class="skill_icon"
                                     src="images\react.jpg"
                                     alt="React"  title="React"></div>
+                                <div class="skill-button"><img class="skill_icon"
+                                    src="images\js.jpg"
+                                    alt="JavaScript"  title="JavaScript"></div>
                                 <div class="skill-button"><img class="skill_icon"
                                     src="images\html.jpg"
                                     alt="HTML"  title="HTML"></div>
@@ -615,58 +831,42 @@
                                     alt="Bootstrap"  title="Bootstrap"></div>
                                 <div class="skill-button"><img class="skill_icon"
                                     src="images\jquery.jpg"
-                                    alt="Jquery"  title="Jquery"></div>
+                                    alt="jQuery"  title="jQuery"></div>
                             </div>
+                        </div>
+                        <div class="container" style="text-align: center;">
+                            <span class="skill-chip">Streamlit</span>
+                            <span class="skill-chip">Responsive Design</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="skill-card-two">
-                        <h6 style="color: rgba(255, 255, 255, 1); margin-top: 20px;">Back-end Technologies</h6>
-                        <h6>& Databases</h6><br>
+                <div class="col-md-6">
+                    <div class="skill-card-one skill-card-auto">
+                        <h6 style="color: rgba(255, 255, 255, 1); margin-top: 20px;">Cloud, DevOps &amp; Tools</h6><br>
                         <div class="container">
-                            <div class="container row">
+                            <div class="container row" style="justify-content: center;">
                                 <div class="skill-button"><img class="skill_icon"
-                                    src="images\django.png"
-                                    alt="Django"  title="Django"></div>
-                                
+                                    src="images\github-log.jpg"
+                                    alt="GitHub"  title="GitHub"></div>
                                 <div class="skill-button"><img class="skill_icon"
-                                    src="images\laravel.jpg"
-                                    alt="Laravel"  title="Laravel"></div>
-                                <div class="skill-button"><img class="skill_icon"
-                                    src="images\python.jpg"
-                                    alt="Python"  title="Python"></div>
-                                <div class="skill-button"><img class="skill_icon"
-                                    src="images\php.jpg"
-                                    alt="PHP"  title="PHP"></div>
-                                <div class="skill-button"><img class="skill_icon"
-                                    src="images\mysql.jpg"
-                                    alt="MySql"  title="MySql"></div>
-                                <div class="skill-button"><img class="skill_icon"
-                                    src="images\sql.png"
-                                    alt="SQL"  title="SQL"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="skill-card-one">
-                        <h6 style="color: rgba(255, 255, 255, 1); margin-top: 20px;">IDE Tools</h6><br><br>
-                        <div class="container">
-                            <div class="container row">
+                                    src="images\postman.jpg"
+                                    alt="Postman"  title="Postman"></div>
                                 <div class="skill-button"><img class="skill_icon"
                                     src="images\vscode.jpg"
                                     alt="Visual Studio Code"  title="Visual Studio Code"></div>
-                                <div class="skill-button"><img class="skill_icon"
-                                    src="images\xampp.jpg"
-                                    alt="Xampp"  title="Xampp"></div>
-                                <div class="skill-button"><img class="skill_icon"
-                                    src="images\postman.jpg"
-                                    alt="POSTMAN"  title="POSTMAN"></div>
-                                <div class="skill-button"><img class="skill_icon"
-                                    src="images\github-log.jpg"
-                                    alt="Github"  title="Github"></div>
                             </div>
+                        </div>
+                        <div class="container" style="text-align: center;">
+                            <span class="skill-chip accent">Azure</span>
+                            <span class="skill-chip accent">Docker</span>
+                            <span class="skill-chip">GCP</span>
+                            <span class="skill-chip">Azure DevOps</span>
+                            <span class="skill-chip">CI/CD</span>
+                            <span class="skill-chip">Linux</span>
+                            <span class="skill-chip">Nginx</span>
+                            <span class="skill-chip">Git</span>
+                            <span class="skill-chip">Microsoft Graph API</span>
+                            <span class="skill-chip">Webhooks</span>
                         </div>
                     </div>
                 </div>
@@ -674,20 +874,153 @@
         </div>
         <div id="portfolio" class="section" style="flex-direction: column;text-align: center;">
             <h2 class="fa-beat">Projects</h2><br>
-            <p>Here you will find some of the personal and client's projects that I created with each project containing its own case study</p>
+            <p>A selection of the AI systems, open-source work, and enterprise applications I have built. Source code
+               for the open-source projects is on <a target="_blank" rel="noreferrer" class="url-rem"
+               href="https://github.com/AsgarD-15"><u>GitHub</u></a>.</p>
             <div class="container row">
+                <div class="col-md-6">
+                    <div class="project-card" style="flex-direction: column;text-align: left;">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        </div>
+                        <div class="project-name">
+                            <h5 style="flex: 1;">Advanced RAG Chatbot</h5>
+                            <p class="mt-3">GENAI &middot; RAG</p>
+                        </div>
+                        <div class="project-desc">
+                            <p>Production-grade retrieval-augmented generation service. Combines hybrid BM25 and vector search with cross-encoder re-ranking and context compression, returns cited answers, and measures itself with RAGAS evaluation metrics.</p>
+                        </div>
+                        <div class="tech-tags">
+                            <span>FastAPI</span><span>Qdrant</span><span>OpenAI</span><span>Streamlit</span><span>Python</span>
+                        </div>
+                        <div class="learn-more">
+                            <a href="https://github.com/AsgarD-15/advanced-rag-chatbot-" target="_blank" class="url-rem"
+                                rel="noopener noreferrer"><i class="fa-brands fa-github"></i> &nbsp;View Code &#10095;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card" style="flex-direction: column;text-align: left;">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-file-invoice"></i>
+                        </div>
+                        <div class="project-name">
+                            <h5 style="flex: 1;">LLM Document Intelligence</h5>
+                            <p class="mt-3">GENAI &middot; DOCUMENT AI</p>
+                        </div>
+                        <div class="project-desc">
+                            <p>Extraction and analysis engine for PDF, DOCX, Excel, CSV, and image inputs. Pulls structured records out of invoices, resumes, and contracts using LLM function calling with Pydantic schema validation.</p>
+                        </div>
+                        <div class="tech-tags">
+                            <span>FastAPI</span><span>OpenAI</span><span>Pydantic</span><span>Streamlit</span><span>Python</span>
+                        </div>
+                        <div class="learn-more">
+                            <a href="https://github.com/AsgarD-15/llm-document-intelligence" target="_blank" class="url-rem"
+                                rel="noopener noreferrer"><i class="fa-brands fa-github"></i> &nbsp;View Code &#10095;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card" style="flex-direction: column;text-align: left;">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+                        <div class="project-name">
+                            <h5 style="flex: 1;">MCP Server Suite</h5>
+                            <p class="mt-3">GENAI &middot; TOOLING</p>
+                        </div>
+                        <div class="project-desc">
+                            <p>Three Model Context Protocol servers built on FastMCP: SQL Explorer for natural-language database querying, Document Analyzer, and Azure Git Explorer. Includes a chatbot orchestrator driven by function calling, letting non-technical users reach data in plain language.</p>
+                        </div>
+                        <div class="tech-tags">
+                            <span>FastMCP</span><span>Python</span><span>OpenAI</span><span>SQL Server</span>
+                        </div>
+                        <div class="learn-more">
+                            <a href="https://github.com/AsgarD-15/mcp-server-suite" target="_blank" class="url-rem"
+                                rel="noopener noreferrer"><i class="fa-brands fa-github"></i> &nbsp;View Code &#10095;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card" style="flex-direction: column;text-align: left;">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <div class="project-name">
+                            <h5 style="flex: 1;">Call Audit QA Platform</h5>
+                            <p class="mt-3">FULL STACK &middot; ENTERPRISE</p>
+                        </div>
+                        <div class="project-desc">
+                            <p>Full-stack quality-assurance platform with 25+ features, including SSO and JWT authentication, dynamic scoring templates, and real-time analytics dashboards. Adopted by 30+ QA auditors. Extended with TensorFlow models for call sentiment classification and agent performance prediction.</p>
+                        </div>
+                        <div class="tech-tags">
+                            <span>Python</span><span>FastAPI</span><span>React</span><span>SQL Server</span><span>TensorFlow</span>
+                        </div>
+                        <div class="learn-more">
+                            <span style="opacity: 0.55;">Internal product &mdash; source not public</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card" style="flex-direction: column;text-align: left;">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <div class="project-name">
+                            <h5 style="flex: 1;">AI Customer Support Chatbot</h5>
+                            <p class="mt-3">GENAI &middot; RAG</p>
+                        </div>
+                        <div class="project-desc">
+                            <p>Multi-channel support assistant with RAG-based knowledge retrieval and automated handoff to a human agent, integrated into Chatwoot through webhooks. Backed by prompt chains that reach 95%+ accuracy on structured extraction across 100+ vendor document formats.</p>
+                        </div>
+                        <div class="tech-tags">
+                            <span>LangChain</span><span>OpenAI</span><span>Ollama</span><span>Chatwoot</span><span>Chroma</span>
+                        </div>
+                        <div class="learn-more">
+                            <span style="opacity: 0.55;">Internal product &mdash; source not public</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card" style="flex-direction: column;text-align: left;">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-film"></i>
+                        </div>
+                        <div class="project-name">
+                            <h5 style="flex: 1;">YouTube Video Automation</h5>
+                            <p class="mt-3">AUTOMATION &middot; OPEN SOURCE</p>
+                        </div>
+                        <div class="project-desc">
+                            <p>Script-to-video pipeline that turns a JSON episode script and scene images into a narrated 1080p video with burned-in subtitles, Ken Burns motion, background music, and a generated thumbnail. Supports nine Indian languages and needs no paid APIs.</p>
+                        </div>
+                        <div class="tech-tags">
+                            <span>Python</span><span>edge-tts</span><span>MoviePy</span><span>ffmpeg</span><span>Pillow</span>
+                        </div>
+                        <div class="learn-more">
+                            <a href="https://github.com/AsgarD-15/youtube-automation" target="_blank" class="url-rem"
+                                rel="noopener noreferrer"><i class="fa-brands fa-github"></i> &nbsp;View Code &#10095;
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-6">
                     <div class="project-card" style="flex-direction: column;text-align: left;">
                         <div class="project-image">
                             <img src="images\pharmtracqr.png" class="project-image"
-                            alt="Project 1">
+                            alt="PharmTracQr">
                         </div>
                         <div class="project-name">
                             <h5 style="flex: 1;">PharmTracQr</h5>
-                            <p class="mt-3">WEB APPLICATIONS</p>
+                            <p class="mt-3">SAAS &middot; ENTERPRISE</p>
                         </div>
                         <div class="project-desc">
-                            <p>Lead the development of PharmTracQR, a leading SaaS solution for API manufacturing companies, revolutionizing pharmaceutical traceability through a secure cloud-based platform.</p>
+                            <p>Led development of PharmTracQR, a SaaS platform for API manufacturing companies delivering pharmaceutical traceability through a secure cloud-based system.</p>
+                        </div>
+                        <div class="tech-tags">
+                            <span>Django</span><span>React</span><span>MySQL</span><span>REST APIs</span>
                         </div>
                         <div class="learn-more">
                             <a href="https://www.codentrixtechnologies.com/qr-code-for-Pharma-api-manufacturers" target="_blank"  class="url-rem" 
@@ -704,10 +1037,13 @@
                         </div>
                         <div class="project-name">
                             <h5 style="flex: 1;">TracerBee</h5>
-                            <p class="mt-3">WEB APPLICATIONS</p>
+                            <p class="mt-3">SUPPLY CHAIN &middot; ENTERPRISE</p>
                         </div>
                         <div class="project-desc">
-                            <p>Developed TracerBee, a comprehensive software product using PHP Laravel, enabling end-to-end Part Traceability. Seamlessly trace parts or items from Raw Material to Finished Goods with a single click.</p>
+                            <p>Part-traceability platform enabling end-to-end tracking from raw material to finished goods in a single click, giving the organisation continuous supply-chain visibility.</p>
+                        </div>
+                        <div class="tech-tags">
+                            <span>Django</span><span>React</span><span>Laravel</span><span>MySQL</span>
                         </div>
                         <div class="learn-more">
                             <a href="https://www.codentrixtechnologies.com/traceability-software-and-services" target="_blank"  class="url-rem"
@@ -725,11 +1061,14 @@
                         </div>
                         <div class="project-name">
                             <h5 style="flex: 1;">Item Generation App</h5>
-                            <p class="mt-3">WEB APPLICATIONS</p>
+                            <p class="mt-3">ERP INTEGRATION &middot; ENTERPRISE</p>
                         </div>
                         <div class="project-desc">
-                            <p>The ‘Item Generation App’ is used to create, activate and update Items in Oracle Betsy.Item Creation-Requestor will apply to create a new item in a specific organization.If the item has cost, then the status can be changed from “Phase In” to “Active”. Any ‘Make item’ should have a BOM and Routing in the Oracle Betsy.</p>
-                        </div><br>
+                            <p>Oracle ERP-integrated application managing the full item lifecycle &mdash; creation, activation, and updates &mdash; with approval routing and BOM validation. Deployed across four countries: China, Thailand, Singapore, and Japan.</p>
+                        </div>
+                        <div class="tech-tags">
+                            <span>Django</span><span>Oracle ERP</span><span>React</span><span>RBAC</span>
+                        </div>
                         <div class="learn-more">
                             <a href="https://www.emerson.com/en-in" target="_blank"  class="url-rem" rel="noopener noreferrer">
                                 Learn More  &#10095;
@@ -745,10 +1084,13 @@
                         </div>
                         <div class="project-name">
                             <h5 style="flex: 1;">Inventory Management</h5>
-                            <p class="mt-3">WEB APPLICATIONS</p>
+                            <p class="mt-3">ERP INTEGRATION &middot; ENTERPRISE</p>
                         </div>
                         <div class="project-desc">
-                            <p>This Project is to calculate the value of the inventory across Raw Materials (RM), Work in Progress (WIP) and Finished Goods (FG). For RM - the application should take Opening stock, receipts and issues within the financial year and generate final inventory valuation report. For WIP & FG – the application should explode the BOM and summarize purchase cost of all Buy items1 as well as estimating total cost of make items by calculating sub contract cost.</p>
+                            <p>Inventory valuation across Raw Materials, Work in Progress, and Finished Goods. Explodes the BOM to summarise purchase cost of buy items and estimate make-item cost including subcontract charges &mdash; processing 2M+ records and cutting manual effort by 70%.</p>
+                        </div>
+                        <div class="tech-tags">
+                            <span>Django</span><span>React</span><span>MySQL</span><span>BOM Algorithm</span>
                         </div>
                         <div class="learn-more">
                             <a href="https://www.emerson.com/en-in" target="_blank"  class="url-rem" rel="noopener noreferrer">
@@ -761,14 +1103,17 @@
                     <div class="project-card" style="flex-direction: column;text-align: left;">
                         <div class="project-image">
                             <img src="images\Emerson.png" class="project-image"
-                            alt="Project 4">
+                            alt="Supplier Portal">
                         </div>
                         <div class="project-name">
                             <h5 style="flex: 1;">Supplier Portal</h5>
-                            <p class="mt-3">WEB APPLICATIONS</p>
+                            <p class="mt-3">DOCUMENT WORKFLOW &middot; ENTERPRISE</p>
                         </div>
                         <div class="project-desc">
-                            <p>Emerson Process Management requires a Supplier Portal for suppliers to upload Quality documents and a web portal for Quality team to review and approve the documents.This allows the quality documents for incoming raw materials to be approved before receiving the raw materials from the supplier.Once the quality documents are approved they will be moved to Emerson Library. The rejected documents should be sent back to the supplier so that they can re-submit for approval.</p>
+                            <p>Portal letting suppliers upload quality documents for incoming raw materials, with a review and approval workflow for the quality team. Approved documents move to the corporate library; rejected ones return to the supplier for resubmission.</p>
+                        </div>
+                        <div class="tech-tags">
+                            <span>Django</span><span>React</span><span>MySQL</span><span>RBAC</span>
                         </div>
                         <div class="learn-more">
                             <a href="https://www.emerson.com/en-in" target="_blank"  class="url-rem" rel="noopener noreferrer">
@@ -778,8 +1123,25 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="project-card empty-project">
-                        Coming soon...
+                    <div class="project-card" style="flex-direction: column;text-align: left;">
+                        <div class="project-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="project-name">
+                            <h5 style="flex: 1;">More on GitHub</h5>
+                            <p class="mt-3">OPEN SOURCE</p>
+                        </div>
+                        <div class="project-desc">
+                            <p>Further work including a Django REST social networking API with token authentication and request rate limiting, a vendor management system, and a responsive Bootstrap 5 storefront with scroll-reveal animations.</p>
+                        </div>
+                        <div class="tech-tags">
+                            <span>Django</span><span>DRF</span><span>Docker</span><span>Bootstrap 5</span>
+                        </div>
+                        <div class="learn-more">
+                            <a href="https://github.com/AsgarD-15?tab=repositories" target="_blank" class="url-rem"
+                                rel="noopener noreferrer"><i class="fa-brands fa-github"></i> &nbsp;Browse Repositories &#10095;
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -787,14 +1149,14 @@
     </div>
     <div id="contact" class="section" style="flex-direction: column;text-align: center;position: relative;">
         <h1>Contact Me</h1>
-        <p><span style="color: rgba(255, 255, 255, 0.8);">I'm open to Job opportunities </span>where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then <span style="color: rgba(255, 255, 255, 0.8);">don't hesitate to Contact me.</span></p><br>
-        
-        <a target="_blank" rel="noreferrer" href="mailto:asgaralisha98d@gamil.com" class="url-rem">
+        <p><span style="color: rgba(255, 255, 255, 0.8);">I'm open to GenAI / LLM Engineer and Senior Full Stack roles </span>where I can contribute, learn and grow. If you have an opportunity that matches my skills and experience then <span style="color: rgba(255, 255, 255, 0.8);">don't hesitate to contact me.</span></p><br>
+
+        <a rel="noreferrer" href="mailto:asgar156d@gmail.com" class="url-rem">
             <h5><u>asgar156d@gmail.com</u></h5><br>
         </a>
         <a target="_blank" rel="noreferrer" href="images\AsgarAliSha-CV.pdf"><button class="btn btn-class">Download My CV <i class="fa-solid fa-download fa-beat"></i></button></a>
         <div class="contact-info">
-                <div style="flex: 1;" class="copy"><p>© Copyright 2024. Made by Asgar Ali Sha </p></div>
+                <div style="flex: 1;" class="copy"><p>© Copyright <span id="copyYear">2026</span>. Made by Asgar Ali Sha </p></div>
                 <div style="flex:1;">
                     <p>
                         <a target="_blank" rel="noreferrer"  class="url-rem" href="https://www.linkedin.com/in/asgar-ali-sha-d-6925691ab/">
@@ -906,6 +1268,10 @@
 
             // Trigger scroll event on page load to set initial active class
             window.dispatchEvent(new Event('scroll'));
+
+            // Keep the footer copyright year current
+            const copyYear = document.getElementById('copyYear');
+            if (copyYear) copyYear.textContent = new Date().getFullYear();
         });
      </script>
 </body>
