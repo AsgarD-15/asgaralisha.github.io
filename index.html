@@ -15,6 +15,16 @@
         content="Production LLM systems: RAG pipelines, agentic MCP tool layers, and structured extraction. Python, FastAPI, LangChain.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://asgard-15.github.io/asgaralisha.github.io/">
+    <meta property="og:image" content="https://asgard-15.github.io/asgaralisha.github.io/images/og-card.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Asgar Ali Sha — GenAI Developer, LLM and RAG Engineer">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Asgar Ali Sha | GenAI Developer, LLM &amp; RAG Engineer">
+    <meta name="twitter:description"
+        content="Production LLM systems: RAG pipelines, agentic MCP tool layers, and structured extraction. Python, FastAPI, LangChain.">
+    <meta name="twitter:image" content="https://asgard-15.github.io/asgaralisha.github.io/images/og-card.png">
+    <link rel="canonical" href="https://asgard-15.github.io/asgaralisha.github.io/">
     <!-- fonts -->
     <link href="https://db.onlinewebfonts.com/c/2539cd9ccc30256a3a42980eaeccd934?family=Handi" rel="stylesheet">
     <!-- <link href="https://db.onlinewebfonts.com/c/b8a1a8c99f8a6d06ccd14edf1735e1b8?family=Hand" rel="stylesheet"> -->
@@ -103,7 +113,7 @@
                 flex-direction: column !important;
                 align-items: flex-start !important;
             }
-            .company_name > h5{
+            .company_name > h3{
                 font-size: medium !important;
                 margin: -80px 0px 15px 70px !important;
             }
@@ -300,7 +310,9 @@
             line-height: 38px;
             letter-spacing: 0em;
             /* text-align: left; */
-            color: rgba(255, 255, 255, 0.4);
+            /* 0.4 alpha measured 3.81:1 on the dark background — below the WCAG AA
+               minimum of 4.5:1. 0.55 measures 5.86:1 and keeps the muted look. */
+            color: rgba(255, 255, 255, 0.55);
         }
         .logo-img{
             margin: 0px !important;
@@ -331,9 +343,6 @@
                 linear-gradient(0deg, #344A4C, #344A4C);
             width: 790px;
             height: 161px;
-            top: 1276.69px;
-            left: 327.24px;
-            transform: rotate(1.5deg);
             /* rotate: -1.5 deg; */
             border: 0.5px dashed rgba(52, 74, 76, 1);
             box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.25);
@@ -380,8 +389,6 @@
         .skill-card-one{
             width: 322px;
             height: 279px;
-            top: 10.39px;
-            transform: rotate(1.5deg); 
             background: linear-gradient(0deg, #021011, #021011),
                 linear-gradient(180deg, #308B94 0%, rgba(56, 185, 197, 0.2) 100%);
             border-radius: 20px;
@@ -394,8 +401,6 @@
         .skill-card-two{
             width: 322px;
             height: 279px;
-            top: 10.39px;
-            transform: rotate(-1.5deg); 
             background: linear-gradient(0deg, #021011, #021011),
                 linear-gradient(180deg, #308B94 0%, rgba(56, 185, 197, 0.2) 100%);
             border-radius: 20px; /* Set border radius */
@@ -425,8 +430,6 @@
             display: flex;
             /* height: 463.52px; */
             margin-top: 15px;
-            top: 2603px;
-            left: 120px;
             padding: 24px;
             border-radius: 20px;
             border: 1px solid;
@@ -513,10 +516,62 @@
             100% { transform: rotate(0deg); }
         }
 
-        h4 span {
+        .hero-kicker span {
             display: inline-block;
             transform-origin: 70% 70%;
             animation: wave 2s infinite;
+        }
+
+        /* ---- Heading hierarchy: the tags changed to fix the document outline,
+               so these restore the sizes the old h4/h5/h6 markup had. ---- */
+        .hero-kicker,
+        .hero-role,
+        .contact-email {
+            color: rgba(255, 255, 255, 1);
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-kicker { font-size: 1.5rem; }
+        .hero-name   { font-size: 2rem; }
+        .hero-role   { font-size: 1.125rem; margin-top: 20px; }
+        .contact-email { font-size: 1.25rem; }
+        .exp-title,
+        .proj-title  { font-size: 1.25rem; }
+        .skill-title {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 1);
+            margin-top: 20px;
+        }
+
+        /* ---- Achievements ---- */
+        .achievement-card {
+            height: 100%;
+            padding: 26px 22px;
+            margin-bottom: 24px;
+            text-align: left;
+            border: 1px solid #308B94;
+            border-radius: 20px;
+            background: linear-gradient(0deg, #021011, #021011),
+                linear-gradient(180deg, #308B94 0%, rgba(56, 185, 197, 0.2) 100%);
+        }
+
+        .achievement-card > i {
+            font-size: 30px;
+            color: rgba(156, 247, 165, 0.9);
+        }
+
+        .achievement-title {
+            margin-top: 14px;
+            font-size: 1.05rem;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .achievement-card > p {
+            font-size: 13px;
+            line-height: 22px;
+            margin-bottom: 0;
         }
         /* ---- Additions: AI-focused skill chips, icon project headers, tech tags ---- */
 
@@ -636,7 +691,7 @@
                 width: 335px !important;
                 height: auto !important;
             }
-            .experience-auto .company_name > h5 {
+            .experience-auto .company_name > h3 {
                 margin: -70px 0px 15px 70px !important;
             }
         }
@@ -683,9 +738,9 @@
                         <img src="images\Asgar-D.png"  class="logo-img"  alt="Logo">
                 </div>
                 <div class="col-md-8 home-content">
-                    <h4>HEY <span>👋 </span>, I'M</h4>
-                    <h2>Asgar Ali Sha D</h2>
-                    <h6 style="font-size: large;margin-top: 20px;">GenAI Developer | LLM &amp; RAG Engineer | Agentic AI</h6>
+                    <p class="hero-kicker">HEY <span>👋 </span>, I'M</p>
+                    <h1 class="hero-name">Asgar Ali Sha D</h1>
+                    <p class="hero-role">GenAI Developer | LLM &amp; RAG Engineer | Agentic AI</p>
                     <p>GenAI Developer with 5+ years of software engineering experience, the last two focused on
                         shipping LLM-powered systems to production. I have built RAG pipelines over vector stores, an
                         agentic tool layer of 3 MCP servers giving non-technical users natural-language access to SQL,
@@ -712,7 +767,7 @@
                     <div class="company_mono">IA</div>
                 </div>
                 <div class="col-md-10" style="text-align: left;">
-                    <div class="company_name"><h5 class="mt-1" style="flex: 1;">InteleANTS Virtual Workforce Pvt Ltd</h5><p class="mt-3" style="white-space: nowrap;">Aug 2024 - Present<span class="role-badge">Current</span></p></div>
+                    <div class="company_name"><h3 class="mt-1 exp-title" style="flex: 1;">InteleANTS Virtual Workforce Pvt Ltd</h3><p class="mt-3" style="white-space: nowrap;">Aug 2024 - Present<span class="role-badge">Current</span></p></div>
                     <p class="company-location">
                         <i class="fa-solid fa-location-dot fa-beat-fade"></i> &nbsp;Chennai, Tamil Nadu &nbsp;&nbsp;
                         <i class="fa-solid fa-microchip fa-beat"></i> &nbsp;GenAI &amp; Full Stack Engineering
@@ -733,7 +788,7 @@
                     <img src="images\codentrix_logo.jpg" alt="Codentrix Technologies logo" class="img-fluid rounded">
                 </div>
                 <div class="col-md-10" style="text-align: left;">
-                    <div class="company_name"><h5 class="mt-1" style="flex: 1;">Codentrix Technologies Pvt Ltd</h5><p class="mt-3">Sep 2021 - Jul 2024</p></div>
+                    <div class="company_name"><h3 class="mt-1 exp-title" style="flex: 1;">Codentrix Technologies Pvt Ltd</h3><p class="mt-3">Sep 2021 - Jul 2024</p></div>
                     <p class="company-location">
                         <i class="fa-solid fa-location-dot fa-beat-fade"></i> &nbsp;Chennai, Tamil Nadu &nbsp;&nbsp;
                         <a target="_blank" rel="noreferrer" class="url-rem" href="https://www.codentrixtechnologies.com/">
@@ -755,7 +810,7 @@
             <div class="row skill-container">
                 <div class="col-md-6">
                     <div class="skill-card-one skill-card-auto">
-                        <h6 style="color: rgba(255, 255, 255, 1); margin-top: 20px;">AI &amp; LLM Engineering</h6><br>
+                        <h3 class="skill-title">AI &amp; LLM Engineering</h3><br>
                         <div class="container" style="text-align: center;">
                             <span class="skill-chip accent">OpenAI API</span>
                             <span class="skill-chip accent">Claude API</span>
@@ -785,7 +840,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="skill-card-two skill-card-auto">
-                        <h6 style="color: rgba(255, 255, 255, 1); margin-top: 20px;">Back-end &amp; Databases</h6><br>
+                        <h3 class="skill-title">Back-end &amp; Databases</h3><br>
                         <div class="container">
                             <div class="container row" style="justify-content: center;">
                                 <div class="skill-button"><img class="skill_icon"
@@ -821,7 +876,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="skill-card-two skill-card-auto">
-                        <h6 style="color: rgba(255, 255, 255, 1); margin-top: 20px;">Front-end</h6><br>
+                        <h3 class="skill-title">Front-end</h3><br>
                         <div class="container">
                             <div class="container row" style="justify-content: center;">
                                 <div class="skill-button"><img class="skill_icon"
@@ -852,7 +907,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="skill-card-one skill-card-auto">
-                        <h6 style="color: rgba(255, 255, 255, 1); margin-top: 20px;">Cloud, DevOps &amp; Tools</h6><br>
+                        <h3 class="skill-title">Cloud, DevOps &amp; Tools</h3><br>
                         <div class="container">
                             <div class="container row" style="justify-content: center;">
                                 <div class="skill-button"><img class="skill_icon"
@@ -880,6 +935,34 @@
                     </div>
                 </div>
             </div>
+            <br><br>
+            <h2>Achievements</h2><br><br>
+            <div class="row achievement-container">
+                <div class="col-md-4">
+                    <div class="achievement-card">
+                        <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+                        <h3 class="achievement-title">Sole Delivery of 5+ AI Systems</h3>
+                        <p>Recognised as the only developer to independently deliver five or more
+                           production-grade AI and full-stack applications within the first year at InteleANTS.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="achievement-card">
+                        <i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i>
+                        <h3 class="achievement-title">Promoted to Senior Software Engineer</h3>
+                        <p>Awarded for independently managing a cross-border ERP integration project
+                           under tight deadlines with zero production incidents.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="achievement-card">
+                        <i class="fa-solid fa-award" aria-hidden="true"></i>
+                        <h3 class="achievement-title">&lsquo;Customer Delight&rsquo; &times;2</h3>
+                        <p>Received twice for delivering web applications with zero escalations
+                           from the client.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="portfolio" class="section" style="flex-direction: column;text-align: center;">
             <h2 class="fa-beat">Projects</h2><br>
@@ -893,7 +976,7 @@
                             <i class="fa-solid fa-magnifying-glass-chart"></i>
                         </div>
                         <div class="project-name">
-                            <h5 style="flex: 1;">Advanced RAG Chatbot</h5>
+                            <h3 class="proj-title" style="flex: 1;">Advanced RAG Chatbot</h3>
                             <p class="mt-3">GENAI &middot; RAG</p>
                         </div>
                         <div class="project-desc">
@@ -915,7 +998,7 @@
                             <i class="fa-solid fa-file-invoice"></i>
                         </div>
                         <div class="project-name">
-                            <h5 style="flex: 1;">LLM Document Intelligence</h5>
+                            <h3 class="proj-title" style="flex: 1;">LLM Document Intelligence</h3>
                             <p class="mt-3">GENAI &middot; DOCUMENT AI</p>
                         </div>
                         <div class="project-desc">
@@ -937,7 +1020,7 @@
                             <i class="fa-solid fa-diagram-project"></i>
                         </div>
                         <div class="project-name">
-                            <h5 style="flex: 1;">MCP Server Suite</h5>
+                            <h3 class="proj-title" style="flex: 1;">MCP Server Suite</h3>
                             <p class="mt-3">GENAI &middot; TOOLING</p>
                         </div>
                         <div class="project-desc">
@@ -959,7 +1042,7 @@
                             <i class="fa-solid fa-headset"></i>
                         </div>
                         <div class="project-name">
-                            <h5 style="flex: 1;">Call Audit QA Platform</h5>
+                            <h3 class="proj-title" style="flex: 1;">Call Audit QA Platform</h3>
                             <p class="mt-3">FULL STACK &middot; ENTERPRISE</p>
                         </div>
                         <div class="project-desc">
@@ -979,7 +1062,7 @@
                             <i class="fa-solid fa-robot"></i>
                         </div>
                         <div class="project-name">
-                            <h5 style="flex: 1;">AI Customer Support Chatbot</h5>
+                            <h3 class="proj-title" style="flex: 1;">AI Customer Support Chatbot</h3>
                             <p class="mt-3">GENAI &middot; RAG</p>
                         </div>
                         <div class="project-desc">
@@ -999,7 +1082,7 @@
                             <i class="fa-solid fa-film"></i>
                         </div>
                         <div class="project-name">
-                            <h5 style="flex: 1;">YouTube Video Automation</h5>
+                            <h3 class="proj-title" style="flex: 1;">YouTube Video Automation</h3>
                             <p class="mt-3">AUTOMATION &middot; OPEN SOURCE</p>
                         </div>
                         <div class="project-desc">
@@ -1022,7 +1105,7 @@
                             alt="TracerBee">
                         </div>
                         <div class="project-name">
-                            <h5 style="flex: 1;">TracerBee</h5>
+                            <h3 class="proj-title" style="flex: 1;">TracerBee</h3>
                             <p class="mt-3">SUPPLY CHAIN &middot; ENTERPRISE</p>
                         </div>
                         <div class="project-desc">
@@ -1046,7 +1129,7 @@
                             alt="Project 3">
                         </div>
                         <div class="project-name">
-                            <h5 style="flex: 1;">Item Generation App</h5>
+                            <h3 class="proj-title" style="flex: 1;">Item Generation App</h3>
                             <p class="mt-3">ERP INTEGRATION &middot; ENTERPRISE</p>
                         </div>
                         <div class="project-desc">
@@ -1069,7 +1152,7 @@
                             alt="Project 5">
                         </div>
                         <div class="project-name">
-                            <h5 style="flex: 1;">Inventory Management</h5>
+                            <h3 class="proj-title" style="flex: 1;">Inventory Management</h3>
                             <p class="mt-3">ERP INTEGRATION &middot; ENTERPRISE</p>
                         </div>
                         <div class="project-desc">
@@ -1091,7 +1174,7 @@
                             <i class="fa-brands fa-github"></i>
                         </div>
                         <div class="project-name">
-                            <h5 style="flex: 1;">More on GitHub</h5>
+                            <h3 class="proj-title" style="flex: 1;">More on GitHub</h3>
                             <p class="mt-3">OPEN SOURCE</p>
                         </div>
                         <div class="project-desc">
@@ -1111,56 +1194,34 @@
         </div>
     </div>
     <div id="contact" class="section" style="flex-direction: column;text-align: center;position: relative;">
-        <h1>Contact Me</h1>
+        <h2>Contact Me</h2>
         <p><span style="color: rgba(255, 255, 255, 0.8);">I'm open to GenAI Developer, LLM / RAG Engineer, and Agentic AI roles </span>where I can contribute, learn and grow. If you have an opportunity that matches my skills and experience then <span style="color: rgba(255, 255, 255, 0.8);">don't hesitate to contact me.</span></p><br>
 
         <a rel="noreferrer" href="mailto:asgar156d@gmail.com" class="url-rem">
-            <h5><u>asgar156d@gmail.com</u></h5><br>
+            <p class="contact-email"><u>asgar156d@gmail.com</u></p><br>
         </a>
         <a target="_blank" rel="noreferrer" href="images\Asgar_AI.pdf"><button class="btn btn-class">Download My CV <i class="fa-solid fa-download fa-beat"></i></button></a>
         <div class="contact-info">
                 <div style="flex: 1;" class="copy"><p>© Copyright <span id="copyYear">2026</span>. Made by Asgar Ali Sha </p></div>
                 <div style="flex:1;">
                     <p>
-                        <a target="_blank" rel="noreferrer"  class="url-rem" href="https://www.linkedin.com/in/asgar-ali-sha-d-6925691ab/">
-                            <i class="fa-brands fa-linkedin fa-beat"></i>&nbsp;&nbsp;&nbsp;
+                        <a target="_blank" rel="noreferrer" class="url-rem" aria-label="LinkedIn profile"
+                            href="https://www.linkedin.com/in/asgar-ali-sha-d-6925691ab/">
+                            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
                         </a>
-                        <a target="_blank" rel="noreferrer"  class="url-rem" href="https://github.com/AsgarD-15">
-                            <i class="fa-brands fa-github fa-beat"></i> &nbsp;&nbsp;&nbsp;
+                        <a target="_blank" rel="noreferrer" class="url-rem" aria-label="GitHub profile"
+                            href="https://github.com/AsgarD-15">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
                         </a>
-                        <a target="_blank" rel="noreferrer"  class="url-rem" href="https://www.instagram.com/_asgar_d_/?igsh=dW5kb2szdXl2aDZ0">
-                            <i class="fa-brands fa-instagram fa-beat"></i>&nbsp;&nbsp;&nbsp;
-                        </a>
-                        <a target="_blank" rel="noreferrer"  class="url-rem"  href="https://www.facebook.com/people/Asgar-Sha-Asgar/pfbid02djmJdHvu5GoNeaBV5HnR2fwgQUd1UErG8HtADEWf642exFNSSfCaWnGd9gTBWyfkl/?mibextid=ZbWKwL">
-                            <i class="fa-brands fa-facebook fa-beat"></i>
+                        <a rel="noreferrer" class="url-rem" aria-label="Send an email"
+                            href="mailto:asgar156d@gmail.com">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                         </a>
                     </p>
                 </div>
         </div>
     </div>
 <div class="fa-bounce" id="goToTop">&#8593;</div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="projectModalLabel"></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body" id="projectModalBody">
-                    <!-- Project details will be displayed here -->
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <!-- Additional buttons if needed -->
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Bootstrap JS and Popper.js (required for Bootstrap JavaScript components) -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
